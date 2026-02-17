@@ -1,0 +1,20 @@
+### Register User
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Siddh",
+  "email": "siddh@test.com",
+  "password": "123456"
+}
+### Login User
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "siddh@test.com",
+  "password": "123456"
+}
+### Get Profile
+GET http://localhost:5000/api/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OGQ4Mjc4OTI1NGUzNjY3OTc1NzU2MiIsImlhdCI6MTc3MDg4MjcwNSwiZXhwIjoxNzcwOTY5MTA1fQ.C0LWFc-aOSmfGlFJyKvoh0H0n_KTAdRXeEQfw5CDD_o
